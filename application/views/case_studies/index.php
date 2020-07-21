@@ -25,7 +25,8 @@
 
       <div class="row">
 
-        <!-- Item 1 -->
+        <!-- Looping Item -->
+        <?php foreach ($item_data->result() as $item) : ?>
         <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="rs-news-1 mb-5">
             <div class="media">
@@ -34,15 +35,16 @@
               </a>
             </div>
             <div class="body">
-              <div class="title"><a href="news-single.html">Occusamus et iusto odio</a></div>
-              <div class="meta-date">May 12, 2019</div>
-              <p>Dignissimos ccusamus et iusto odio ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores....</p>
+              <div class="title"><a href="news-single.html"><?= $item->title ?></a></div>
+              <div class="meta-date"><?= date('F j, Y', strtotime($item->created_at)) ?></div>
+              <p><?= $item->description ?></p>
             </div>
           </div>
         </div>
+        <?php endforeach; ?>
 
         <!-- Item 2 -->
-        <div class="col-sm-12 col-md-12 col-lg-4">
+        <!-- <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="rs-news-1 mb-5">
             <div class="media">
               <a href="news-single.html">
@@ -55,10 +57,10 @@
               <p>Dignissimos ccusamus et iusto odio ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores....</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Item 3 -->
-        <div class="col-sm-12 col-md-12 col-lg-4">
+        <!-- <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="rs-news-1 mb-5">
             <div class="media">
               <a href="news-single.html">
@@ -71,10 +73,10 @@
               <p>Dignissimos ccusamus et iusto odio ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores....</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Item 4 -->
-        <div class="col-sm-12 col-md-12 col-lg-4">
+        <!-- <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="rs-news-1 mb-5">
             <div class="media">
               <a href="news-single.html">
@@ -87,10 +89,10 @@
               <p>Dignissimos ccusamus et iusto odio ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores....</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Item 5 -->
-        <div class="col-sm-12 col-md-12 col-lg-4">
+        <!-- <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="rs-news-1 mb-5">
             <div class="media">
               <a href="news-single.html">
@@ -103,10 +105,10 @@
               <p>Dignissimos ccusamus et iusto odio ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores....</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Item 6 -->
-        <div class="col-sm-12 col-md-12 col-lg-4">
+        <!-- <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="rs-news-1 mb-5">
             <div class="media">
               <a href="news-single.html">
@@ -119,7 +121,7 @@
               <p>Dignissimos ccusamus et iusto odio ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores....</p>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
 

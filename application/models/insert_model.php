@@ -7,6 +7,10 @@
       //print_r($query);
       //exit();
     }
+
+    public function insert_case_studies($data, $table){
+      $this->db->insert($table,$data); 
+    }
   
   }
 ?>

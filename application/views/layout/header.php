@@ -178,7 +178,7 @@
                   </li>
 
                   <li>
-                    <a href="#">
+                    <a href="<?= base_url() ?>dashboard/case-studies">
                       <i class="material-icons">find_in_page</i>
                       <span>Case Studies</span>
                     </a>

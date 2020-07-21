@@ -8,10 +8,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller
 {
 
-  // function __construct(argument)
-  // {
-  //   // code...
-  // }
+  public function __construct()
+	{
+		parent::__construct();
+
+		 
+		 $this->load->model('case_studies_model');
+	}
 
   public function index(){
 
@@ -42,8 +45,10 @@ class Home extends CI_Controller
 
   public function case_studies(){
 
+    $data['item_data'] = $this->case_studies_model->get_all_data();
+
     $content['header_web']  = $this->load->view('layout/header_web');
-    $content['content_web'] = $this->load->view('case_studies/index');
+    $content['content_web'] = $this->load->view('case_studies/index', $data);
     $content['footer_web']  = $this->load->view('layout/footer_web');
 
     $this->load->view('layout/page_web',$content);
