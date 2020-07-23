@@ -28,9 +28,10 @@
                               </tr>
                           </thead>
                           <tbody>
+                              <?php $i = 1; ?>
                               <?php foreach ($item_data->result() as $item) :?>
                               <tr>
-                                  <th scope="row"><?= $item->id ?></th>
+                                  <th scope="row"><?= $i++; ?></th>
                                   <td><?= $item->title ?></td>
                                   <td><?= $item->description ?></td>
                                   <td><img style="width:160px" src="<?= base_url();?>/public/images/uploads/<?= $item->image ?>" alt="gambar depan"></td>

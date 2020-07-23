@@ -26,6 +26,11 @@
       <div class="row">
         <!-- Looping Item -->
         <?php foreach ($item_data->result() as $item) : ?>
+          <?php 
+            $num_char = 150;
+            $text = $item->description;
+            $textSort = substr($text, 0, $num_char) . '...';
+          ?>
         <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="rs-news-1 mb-5">
             <div class="media">
@@ -36,7 +41,7 @@
             <div class="body">
               <div class="title"><a href="news-single.html"><?= $item->title ?></a></div>
               <div class="meta-date"><?= date('F j, Y', strtotime($item->created_at)) ?></div>
-              <p><?= $item->description ?></p>
+              <p><?= $textSort ?></p>
             </div>
           </div>
         </div>

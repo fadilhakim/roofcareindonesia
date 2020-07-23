@@ -125,7 +125,7 @@ class Dashboard extends CI_Controller {
 					'image' => $image,
 					'description' => $deskripsi
 				);
-			$this->insert_model->insert_case_studies($data_post,'case_studies');
+			$this->insert_model->insert_case_studies($data_post,'t_case_studies');
 	
 			redirect('dashboard/case-studies');
 		}
@@ -201,6 +201,9 @@ class Dashboard extends CI_Controller {
 			}
 
 
+			// services
+
+
 			public function services(){
 
 				$data['item_data'] = $this->services_model->get_all_data();
@@ -232,7 +235,7 @@ class Dashboard extends CI_Controller {
 						'image' => $image,
 						'description' => $deskripsi
 					);
-				$this->services_model->insert_services($data_post,'services');
+				$this->services_model->insert_services($data_post,'t_services');
 
 				redirect('dashboard/services');
 			}
