@@ -121,13 +121,9 @@
                       </li>
 
 			                <li class="nav-item dropdown">
-			                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                    <a class="nav-link" href="<?= base_url() ?>services" role="button"  aria-haspopup="true" aria-expanded="false">
       						          SERVICES
-      						        </a>
-			                    <div class="dropdown-menu">
-			                    	<a class="dropdown-item" href="services.html">SERVICES GRID</a>
-        	          				<a class="dropdown-item" href="services-detail.html">SINGLE SERVICES</a>
-        							    </div>
+      						    </a>
 			                </li>
 
 

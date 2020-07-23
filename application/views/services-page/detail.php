@@ -3,12 +3,12 @@
 			<div class="container">
 				<div class="col-12 col-md-12">
 					<div class="d-flex bd-highlight mb-2">
-						<div class="title-page">Case Studies</div>
+						<div class="title-page">Services</div>
 					</div>
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb ">
 					    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-					    <li class="breadcrumb-item active" aria-current="page">Case Studies Detail</li>
+					    <li class="breadcrumb-item active" aria-current="page">Services Detail</li>
 					  </ol>
 					</nav>
 				</div>

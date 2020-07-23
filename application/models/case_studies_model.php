@@ -19,7 +19,14 @@
     }
 
     public function get_all_data_by_id($id){
-      return $this->db->get_where('case_studies', array('id', $id));
+      $query = $this->db->get_where('case_studies', array('id' => $id));
+
+      if(!empty($query->row_array())){
+          return $query->row_array();
+      }else {
+        return false;
+      }
+
     }
   
   }

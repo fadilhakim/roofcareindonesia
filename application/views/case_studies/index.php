@@ -4,12 +4,12 @@
     <div class="container">
       <div class="col-12 col-md-12">
         <div class="d-flex bd-highlight mb-2">
-          <div class="title-page">News</div>
+          <div class="title-page">Case Studies</div>
         </div>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb ">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">News</li>
+            <li class="breadcrumb-item active" aria-current="page">Case Studies</li>
           </ol>
         </nav>
       </div>
@@ -24,14 +24,13 @@
     <div class="container">
 
       <div class="row">
-
         <!-- Looping Item -->
         <?php foreach ($item_data->result() as $item) : ?>
         <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="rs-news-1 mb-5">
             <div class="media">
-              <a href="news-single.html">
-                <img src="images/dummy-img-600x500.jpg" alt="" class="img-fluid">
+              <a href="case_studies/detail/<?= $item->id ?>">
+                <img src="<?= base_url() ?>public/images/uploads/<?= $item->image ?>" alt="" class="img-fluid">
               </a>
             </div>
             <div class="body">
