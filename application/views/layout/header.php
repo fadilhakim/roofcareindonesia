@@ -157,17 +157,10 @@
                     </ul>
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="menu-toggle">
+                    <a href="<?= base_url() ?>dashboard/services">
                         <i class="material-icons">build</i>
                         <span>Services</span>
                     </a>
-                    <ul class="ml-menu">
-                        <li>
-                            <a href="#">
-                                <span>Cards 1</span>
-                            </a>
-                        </li>
-                    </ul>
                   </li>
 
                   <li>

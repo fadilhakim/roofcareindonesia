@@ -58,8 +58,13 @@ $route['contact'] = 'home/contact';
 $route['case_studies'] = 'home/case_studies';
 $route['case_studies/detail/(:any)'] = 'home/detail_case_studies/$1';
 
+
+
 $route['seminars'] = 'home/seminars';
 $route['seminars/detail/(:any)'] = 'home/detail_seminars/$1';
+
+$route['services'] = 'home/services';
+$route['services/detail/(:any)'] = 'home/detail_services/$1';
 
 
 /********* Dashboard *************/
@@ -76,6 +81,15 @@ $route['dashboard/case-studies/create'] = 'dashboard/case_studies_create';
 $route['dashboard/case-studies/submit'] = 'dashboard/case_studies_submit';
 $route['dashboard/case-studies/delete/(:any)'] = 'dashboard/case_studies_delete/$1';
 $route['dashboard/case-studies/edit/(:any)'] = 'dashboard/case_studies_edit/$1';
+$route['dashboard/case-studies/update/(:any)'] = 'dashboard/case_studies_update/$1';
+
+$route['dashboard/services'] = 'dashboard/services';
+$route['dashboard/services/create'] = 'dashboard/services_create';
+$route['dashboard/services/submit'] = 'dashboard/services_submit';
+$route['dashboard/services/delete/(:any)'] = 'dashboard/services_delete/$1';
+$route['dashboard/services/edit/(:any)'] = 'dashboard/services_edit/$1';
+$route['dashboard/services/update/(:any)'] = 'dashboard/services_update/$1';
+
 
 
 $route['systems'] = 'systems';
