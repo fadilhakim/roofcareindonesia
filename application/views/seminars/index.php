@@ -1,5 +1,5 @@
 <!-- BANNER -->
-<div class="section banner-page" data-background="<?php base_url ?>public/images/dummy/parallax-2.jpg">
+<div class="section banner-page" data-background="<?= base_url() ?>public/images/dummy/parallax-2.jpg">
   <div class="content-wrap pos-relative">
     <div class="container">
       <div class="col-12 col-md-12">
@@ -46,7 +46,7 @@
           <div class="box-image-5 shadow">
             <a href="project-detail.html" title="Industrial Complex">
               <div class="media">
-                <img src="<?php base_url ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
+                <img src="<?php base_url() ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
               </div>
               <div class="body">
                 <div class="content">
@@ -61,7 +61,7 @@
           <div class="box-image-5 shadow">
             <a href="project-detail.html" title="Industrial Complex">
               <div class="media">
-                <img src="<?php base_url ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
+                <img src="<?php base_url() ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
               </div>
               <div class="body">
                 <div class="content">
@@ -76,7 +76,7 @@
           <div class="box-image-5 shadow">
             <a href="project-detail.html" title="Industrial Complex">
               <div class="media">
-                <img src="<?php base_url ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
+                <img src="<?php base_url() ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
               </div>
               <div class="body">
                 <div class="content">
@@ -91,7 +91,7 @@
           <div class="box-image-5 shadow">
             <a href="project-detail.html" title="Industrial Complex">
               <div class="media">
-                <img src="<?php base_url ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
+                <img src="<?php base_url() ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
               </div>
               <div class="body">
                 <div class="content">
@@ -106,7 +106,7 @@
           <div class="box-image-5 shadow">
             <a href="project-detail.html" title="Industrial Complex">
               <div class="media">
-                <img src="<?php base_url ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
+                <img src="<?php base_url() ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
               </div>
               <div class="body">
                 <div class="content">
@@ -121,7 +121,7 @@
           <div class="box-image-5 shadow">
             <a href="project-detail.html" title="Industrial Complex">
               <div class="media">
-                <img src="<?php base_url ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
+                <img src="<?php base_url() ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
               </div>
               <div class="body">
                 <div class="content">
@@ -136,7 +136,7 @@
           <div class="box-image-5 shadow">
             <a href="project-detail.html" title="Industrial Complex">
               <div class="media">
-                <img src="<?php base_url ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
+                <img src="<?php base_url() ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
               </div>
               <div class="body">
                 <div class="content">
@@ -151,7 +151,7 @@
           <div class="box-image-5 shadow">
             <a href="project-detail.html" title="Industrial Complex">
               <div class="media">
-                <img src="<?php base_url ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
+                <img src="<?php base_url() ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
               </div>
               <div class="body">
                 <div class="content">
@@ -166,7 +166,7 @@
           <div class="box-image-5 shadow">
             <a href="project-detail.html" title="Industrial Complex">
               <div class="media">
-                <img src="<?php base_url ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
+                <img src="<?php base_url() ?>public/images/dummy/dummy-img-600x500.jpg" alt="" class="img-fluid">
               </div>
               <div class="body">
                 <div class="content">

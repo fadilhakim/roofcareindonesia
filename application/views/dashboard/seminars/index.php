@@ -26,10 +26,14 @@
                               </tr>
                           </thead>
                           <tbody>
+                            <?php foreach ($data_seminar->result() as $seminar): ?>
+
                               <tr>
                                   <th scope="row">1</th>
-                                  <td>Loren Lipsum Dummy Tittle</td>
-                                  <td><img style="width:160px" src="<?= base_url();?>/public/images/dummy/9.jpg" alt="gambar depan"></td>
+                                  <td><?= $seminar->judul_seminar ?></td>
+                                  <td>
+                                    <img style="width:160px" src="<?= base_url();?>/public/images/uploads/<?= $seminar->gambar_seminar ?>" alt="gambar depan">
+                                  </td>
                                   <td>
                                     <h5><span class="label bg-blue">Factory</span></h5>
                                   </td>
@@ -39,6 +43,8 @@
 
                                   </td>
                               </tr>
+
+                            <?php endforeach; ?>
                           </tbody>
                       </table>
                   </div>

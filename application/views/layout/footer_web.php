@@ -81,9 +81,9 @@
               Links
             </div>
             <ul class="list">
-              <li><a href="<?php base_url ?>about" title="About Us">About Us</a></li>
-              <li><a href="<?php base_url ?>case_studies" title="Corporate Profile">Case Studies</a></li>
-              <li><a href="<?php base_url ?>contact" title="Our Team">Contact</a></li>
+              <li><a href="<?= base_url() ?>about" title="About Us">About Us</a></li>
+              <li><a href="<?= base_url() ?>case_studies" title="Corporate Profile">Case Studies</a></li>
+              <li><a href="<?= base_url() ?>contact" title="Our Team">Contact</a></li>
             </ul>
           </div>
         </div>

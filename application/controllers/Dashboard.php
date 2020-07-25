@@ -21,6 +21,7 @@ class Dashboard extends CI_Controller {
 		// }
 		 $this->load->model('insert_model');
 		 $this->load->model('case_studies_model');
+		 $this->load->model('seminar_model');
 		$this->load->helper(array('form', 'url'));
 	}
 
@@ -38,8 +39,9 @@ class Dashboard extends CI_Controller {
 	}
 
 	public function seminars (){
+		$data['data_seminar'] = $this->seminar_model->get_all_data();
 		$content['header_web']  = $this->load->view('layout/header');
-    $content['content_web'] = $this->load->view('dashboard/seminars/index');
+    $content['content_web'] = $this->load->view('dashboard/seminars/index', $data);
     $content['footer_web']  = $this->load->view('layout/footer');
     $this->load->view('layout/page',$content);
 	}
@@ -125,7 +127,7 @@ class Dashboard extends CI_Controller {
 					'description' => $deskripsi
 				);
 			$this->insert_model->insert_case_studies($data_post,'case_studies');
-	
+
 			redirect('dashboard/case-studies');
 		}
 
@@ -136,10 +138,10 @@ class Dashboard extends CI_Controller {
 			//$config['max_size']             = 1024; // 1MB
 			// $config['max_width']            = 1024;
 			// $config['max_height']           = 768;
-	
+
 			$this->load->library('upload', $config);
 			$this->upload->do_upload('gambar_case_studies');
-	
+
 				if (!$this->upload->do_upload('gambar_case_studies')){
 					echo "error upload";
 					exit();
@@ -165,6 +167,6 @@ class Dashboard extends CI_Controller {
 				$this->load->view('layout/page',$content);
 			}
 
-		
+
 
 }
