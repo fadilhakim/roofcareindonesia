@@ -72,9 +72,12 @@ $route['login'] = 'dashboard/login';
 $route['dashboard'] = 'dashboard';
 
 $route['dashboard/seminars'] = 'dashboard/seminars';
-$route['dashboard/seminars/detail/(:any)'] = 'dashboard/seminars_detail/$1';
 $route['dashboard/seminars/create'] = 'dashboard/seminars_create';
 $route['dashboard/seminars/submit'] = 'dashboard/seminars_submit';
+$route['dashboard/seminars/delete/(:any)'] = 'dashboard/seminars_delete/$1';
+$route['dashboard/seminars/edit/(:any)'] = 'dashboard/seminars_edit/$1';
+$route['dashboard/seminars/update/(:any)'] = 'dashboard/seminars_update/$1';
+
 
 $route['dashboard/case-studies'] = 'dashboard/case_studies';
 $route['dashboard/case-studies/create'] = 'dashboard/case_studies_create';

@@ -26,20 +26,25 @@
                               </tr>
                           </thead>
                           <tbody>
+                            <?php $i = 1; ?>
                             <?php foreach ($data_seminar->result() as $seminar): ?>
 
                               <tr>
-                                  <th scope="row">1</th>
+                                  <th scope="row"><?= $i++; ?></th>
                                   <td><?= $seminar->judul_seminar ?></td>
                                   <td>
                                     <img style="width:160px" src="<?= base_url();?>/public/images/uploads/<?= $seminar->gambar_seminar ?>" alt="gambar depan">
                                   </td>
                                   <td>
-                                    <h5><span class="label bg-blue">Factory</span></h5>
+                                    <h5>
+                                      <span class="label bg-blue">
+                                        <?= $seminar->kategori_seminar ?>
+                                      </span>
+                                    </h5>
                                   </td>
                                   <td>
-                                    <a href="<?php echo base_url() ?>dashboard/seminars/detail/1" class="btn btn-warning">Edit</a>
-                                    <a href="#" class="btn btn-danger">Delete</a>
+                                    <a href="<?php echo base_url() ?>dashboard/seminars/edit/<?= $seminar->id ?>" class="btn btn-warning">Edit</a>
+                                    <a href="<?php echo base_url() ?>dashboard/seminars/delete/<?= $seminar->id ?>" class="btn btn-danger">Delete</a>
 
                                   </td>
                               </tr>

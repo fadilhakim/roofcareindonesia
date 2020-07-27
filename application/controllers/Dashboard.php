@@ -48,19 +48,13 @@ class Dashboard extends CI_Controller {
     $content['footer_web']  = $this->load->view('layout/footer');
     $this->load->view('layout/page',$content);
 	}
-	public function seminars_detail (){
+	public function seminars_create (){
 		$content['header_web']  = $this->load->view('layout/header');
     $content['content_web'] = $this->load->view('dashboard/seminars/detail');
     $content['footer_web']  = $this->load->view('layout/footer');
     $this->load->view('layout/page',$content);
 	}
 
-	public function seminars_create (){
-		$content['header_web']  = $this->load->view('layout/header');
-    $content['content_web'] = $this->load->view('dashboard/seminars/create');
-    $content['footer_web']  = $this->load->view('layout/footer');
-    $this->load->view('layout/page',$content);
-	}
 	public function seminars_submit (){
 		$judul_seminar = $this->input->post('judul_seminar');
 		$kategori_seminar = $this->input->post('kategori_seminar');
@@ -95,6 +89,59 @@ class Dashboard extends CI_Controller {
 			}
 		}
 
+		public function seminars_edit($id){
+
+			$getDataById = $this->seminar_model->get_all_data_by_id($id);
+			$data['data_category'] = $this->seminar_model->get_all_seminar_category();
+
+			$data['id'] = $id;
+			$data['judul_seminar'] = $getDataById['judul_seminar'];
+			$data['deskripsi'] = $getDataById['deskripsi'];
+			$data['gambar_seminar'] = $getDataById['gambar_seminar'];
+			$data['create_date'] = $getDataById['create_date'];
+			$data['no_category'] = $getDataById['kategori_seminar'];
+
+			$content['header_web']  = $this->load->view('layout/header');
+			$content['content_web'] = $this->load->view('dashboard/seminars/edit', $data);
+			$content['footer_web']  = $this->load->view('layout/footer');
+
+			$this->load->view('layout/page',$content);
+		}
+
+		public function seminars_update($id){
+			$judul_seminar = $this->input->post('judul_seminar');
+			$deskripsi = $this->input->post('deskripsi');
+			$kategori_seminar = $this->input->post('kategori_seminar');
+
+			if(!empty($_FILES['gambar_seminar']['name'])){
+				$this->gambar_seminar = $this->_uploadImage();
+				$gambar_seminar = $_FILES['gambar_seminar']['name'];
+			}else {
+				// $this->image = $this->input->post('old_image');
+				$gambar_seminar = $this->input->post('old_image');
+			}
+
+			$data_post = array(
+				'judul_seminar' => $judul_seminar,
+				'gambar_seminar' => $gambar_seminar,
+				'kategori_seminar' => $kategori_seminar,
+				'deskripsi' => $deskripsi
+			);
+
+			$updated = $this->seminar_model->update_data($data_post, $id);
+
+			if($updated){
+				redirect('dashboard/seminars');
+			}
+		}
+
+		public function seminars_delete($id){
+			$deleted = $this->seminar_model->delete_data($id);
+
+			if($deleted){
+				redirect('dashboard/seminars');
+			}
+		}
 
 		// case studies
 
