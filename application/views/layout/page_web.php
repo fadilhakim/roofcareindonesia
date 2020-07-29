@@ -1,3 +1,3 @@
-<?= $header; ?>
-<?= $content; ?>
-<?= $footer; ?>
+<?php $header; ?>
+<?php $content; ?>
+<?php $footer; ?>

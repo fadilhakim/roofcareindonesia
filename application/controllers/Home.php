@@ -12,9 +12,10 @@ class Home extends CI_Controller
 	{
 		parent::__construct();
 
-		 
+
      $this->load->model('case_studies_model');
      $this->load->model('services_model');
+     $this->load->model('seminar_model');
 	}
 
   public function index(){
@@ -58,7 +59,7 @@ class Home extends CI_Controller
   public function detail_case_studies($id){
 
     $getDataById = $this->case_studies_model->get_all_data_by_id($id);
-				
+
 				$data['id'] = $id;
 				$data['title'] = $getDataById['title'];
 				$data['description'] = $getDataById['description'];
@@ -73,18 +74,25 @@ class Home extends CI_Controller
   }
 
   public function seminars(){
-
+    $data['data_seminar'] = $this->seminar_model->get_all_data();
     $content['header_web']  = $this->load->view('layout/header_web');
-    $content['content_web'] = $this->load->view('seminars/index');
+    $content['content_web'] = $this->load->view('seminars/index',$data);
     $content['footer_web']  = $this->load->view('layout/footer_web');
 
     $this->load->view('layout/page_web',$content);
   }
 
-  public function detail_seminars(){
+  public function detail_seminars($id){
+
+    $getDataById = $this->seminar_model->get_all_data_by_id($id);
+
+		$data['id'] = $id;
+		$data['judul_seminar'] = $getDataById['judul_seminar'];
+		$data['deskripsi'] = $getDataById['deskripsi'];
+		$data['gambar_seminar'] = $getDataById['gambar_seminar'];
 
     $content['header_web']  = $this->load->view('layout/header_web');
-    $content['content_web'] = $this->load->view('seminars/detail');
+    $content['content_web'] = $this->load->view('seminars/detail',$data);
     $content['footer_web']  = $this->load->view('layout/footer_web');
 
     $this->load->view('layout/page_web',$content);
@@ -112,7 +120,7 @@ class Home extends CI_Controller
 
   public function detail_services($id){
     $getDataById = $this->services_model->get_all_data_by_id($id);
-				
+
     $data['id'] = $id;
     $data['title'] = $getDataById['title'];
     $data['description'] = $getDataById['description'];
