@@ -48,7 +48,7 @@
             <div class="box-image-5 shadow">
               <a href="<?php echo base_url() ?>seminars/detail/<?= $seminar->id ?>" title="Industrial Complex">
                 <div class="media">
-                  <img src="<?= base_url();?>/public/images/uploads/<?= $seminar->gambar_seminar ?>" alt="" class="img-fluid">
+                  <img src="<?= base_url();?>public/images/dummy-img-600x500.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="body">
                   <div class="content">

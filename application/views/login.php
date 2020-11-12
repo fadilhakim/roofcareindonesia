@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>PMOIS | PT Lintasarta</title>
+    <title>Login CMS Roofcare Indonesia</title>
     <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
@@ -27,15 +27,15 @@
 
 <body class="login-page">
     <div class="login-box">
-        
+
         <div class="card">
             <div class="body">
 				<div class="logo">
-					<a><b>PROGRAM MANAGEMENT OFFICE<br/>INFORMATION SYSTEM</b>
-					<img src="public/images/icon/lintas.jpg" height="100" alt="" />
+					<a><b>Login Content Management System<br><br></b>
+					<img src="<?= base_url();?>/public/images/logo_roofcareIndonesia.png" height="70" alt="" />
 					</a>
 				</div>
-								
+
                 <!--
 				<form id="sign_in" method="POST">
 				-->

@@ -54,6 +54,7 @@ $route['404_override'] = 'home/page404';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['about'] = 'home/about';
+$route['home'] = 'home';
 $route['contact'] = 'home/contact';
 $route['case_studies'] = 'home/case_studies';
 $route['case_studies/detail/(:any)'] = 'home/detail_case_studies/$1';
@@ -68,7 +69,7 @@ $route['services/detail/(:any)'] = 'home/detail_services/$1';
 
 
 /********* Dashboard *************/
-$route['login'] = 'dashboard/login';
+$route['dashboard/login'] = 'login';
 $route['dashboard'] = 'dashboard';
 
 $route['dashboard/seminars'] = 'dashboard/seminars';

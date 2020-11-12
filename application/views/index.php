@@ -35,7 +35,7 @@
 	<div class="section">
 		<div class="content-wrap pb-0">
 			<div class="container">
-				<div class="row align-items-end">
+				<div class="row align-items-center">
 
 					<div class="col-12 col-md-4">
 						<img src="<?= base_url();?>/public/images/home/systems.png" class="img-fluid" alt="">
@@ -44,7 +44,7 @@
 					<div class="col-12 col-md-7 offset-md-1">
 
 						<h2 class="section-heading mt-3 mb-4">
-							ABOUT INDUSE
+							ABOUT ROOFCARE INDONESIA
 						</h2>
 						<p class="subheading mb-4">The best of the best for everyone</p>
 
@@ -302,7 +302,7 @@
 								<div class="rs-box-testimony">
 
 									<div class="media-box">
-										<img src="images/dummy-img-400x400.jpg" alt="" class="rounded-circle">
+										<img src="<?= base_url();?>public/images/client2.png" alt="" class="">
 									</div>
 									<div class="quote-box">
 										<blockquote class="quote">
@@ -399,7 +399,7 @@
 						<div class="rs-news-1 mb-1">
 							<div class="media">
 								<a href="news-single.html">
-									<img src="images/dummy-img-600x500.jpg" alt="" class="img-fluid">
+									<img src="<?= base_url();?>public/images/dummy-img-600x500.jpg" alt="" class="img-fluid">
 								</a>
 							</div>
 							<div class="body">
@@ -415,7 +415,7 @@
 						<div class="rs-news-1 mb-1">
 							<div class="media">
 								<a href="news-single.html">
-									<img src="images/dummy-img-600x500.jpg" alt="" class="img-fluid">
+									<img src="<?= base_url();?>public/images/dummy-img-600x500.jpg" alt="" class="img-fluid">
 								</a>
 							</div>
 							<div class="body">
@@ -431,7 +431,7 @@
 						<div class="rs-news-1 mb-1">
 							<div class="media">
 								<a href="news-single.html">
-									<img src="images/dummy-img-600x500.jpg" alt="" class="img-fluid">
+									<img src="<?= base_url();?>public/images/dummy-img-600x500.jpg" alt="" class="img-fluid">
 								</a>
 							</div>
 							<div class="body">

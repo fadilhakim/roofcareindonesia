@@ -97,15 +97,16 @@
     	          						<a class="dropdown-item" href="about-partners.html">OUR PARTNERS</a>
     					            </div> -->
 			                </li>
+                      <?php $getCategorySystems = $this->sistems_model->get_all_systems_category() ?>
+                      <?php $getSubCategorySystems = $this->sistems_model->get_all_systems_sub_category() ?>
 
                       <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SYSTEMS</a>
                         <div class="dropdown-menu">
-                          <a class="dropdown-item" href="pages-faq.html">Single-ply Membrane</a>
-                          <a class="dropdown-item" href="pages-pricing-table.html">Metal Solutions</a>
-                          <a class="dropdown-item" href="pages-404-page.html">Retrofitting</a>
-                          <a class="dropdown-item" href="pages-404-page.html">Roof Coatings</a>
-                          <a class="dropdown-item" href="pages-404-page.html">Liquid Applied Membrane</a>
+                          <?php foreach ($getCategorySystems->result() as $keyS): ?>
+                              <a class="dropdown-item" href="#"><?= $keyS->judul ?></a>
+                          <?php endforeach; ?>
+
                           <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Green Roofing Options</a>
                           <div class="dropdown-menu">
     			                  <a class="dropdown-item" href="about-company.html">Gradern Roofs</a>
@@ -116,14 +117,17 @@
     			                  <a class="dropdown-item" href="about-company.html">Conventional</a>
     	          						<a class="dropdown-item" href="about-history.html">Siphonic Systems</a>
     					            </div>
-                          <a class="dropdown-item" href="pages-404-page.html">Safety Lines</a>
                         </div>
                       </li>
-
+                      <?php $getCategoryServices = $this->services_model->get_all_services_category() ?>
 			                <li class="nav-item dropdown">
-			                    <a class="nav-link" href="<?= base_url() ?>services" role="button"  aria-haspopup="true" aria-expanded="false">
-      						          SERVICES
-      						    </a>
+			                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+                          <div class="dropdown-menu">
+
+                             <?php foreach ($getCategoryServices->result() as $key): ?>
+                                 <a class="dropdown-item" href="<?= base_url(); ?>service_detail/<?= $key->id ?>"><?= $key->judul ?></a>
+                             <?php endforeach; ?>
+                          </div>
 			                </li>
 
 

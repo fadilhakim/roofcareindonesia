@@ -7,25 +7,19 @@ class Dashboard extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		// if(!$user = $this->session->userdata('username'))
-		// {
-		// 	redirect('login');
-		// }else{
-		//
-		//
-		//
-		// 	$this->load->model("services_model");
-		// 	$this->load->model("dashboard_model");
-		//
-		// 	$this->load->helper("money_format_helper");
-		// }
-		 $this->load->model('insert_model');
-		 $this->load->model('case_studies_model');
+		if(!$user = $this->session->userdata('username'))
+		{
+			redirect('dashboard/login');
+		}else{
+			$this->load->model('insert_model');
+	 	  $this->load->model('case_studies_model');
 
-		 $this->load->model('seminar_model');
-		 $this->load->model('services_model');
+	 	  $this->load->model('seminar_model');
+	 	  $this->load->model('services_model');
 
-		$this->load->helper(array('form', 'url'));
+	 	  $this->load->helper(array('form', 'url'));
+		}
+
 	}
 
 	public function index (){
@@ -35,10 +29,10 @@ class Dashboard extends CI_Controller {
     $this->load->view('layout/page',$content);
 	}
 	public function login (){
-		$content['header_web']  = $this->load->view('layout/header');
-    $content['content_web'] = $this->load->view('dashboard/login');
-    $content['footer_web']  = $this->load->view('layout/footer');
-    $this->load->view('layout/page',$content);
+    // $content['content_web'] = $this->load->view('login');
+    // $this->load->view('layout/page',$content);
+		//$this->load->view('login');
+		echo "aduhai";
 	}
 
 	public function seminars (){

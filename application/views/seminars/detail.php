@@ -53,7 +53,7 @@
 
         </div>
         <div class="col-12 col-sm-12 col-md-8">
-          <img src="<?= base_url();?>/public/images/uploads/<?= $gambar_seminar ?>" alt="" class="img-fluid">
+          <img src="<?= base_url();?>/public/images/dummy-img-900x500.jpg" alt="" class="img-fluid">
           <h3 class="text-primary my-4">
             <?= $judul_seminar ?>
           </h3>

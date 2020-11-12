@@ -16,6 +16,7 @@ class Home extends CI_Controller
      $this->load->model('case_studies_model');
      $this->load->model('services_model');
      $this->load->model('seminar_model');
+      $this->load->model('sistems_model');
 	}
 
   public function index(){
