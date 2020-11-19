@@ -67,6 +67,15 @@ $route['services'] = 'home/services';
 $route['services/detail/(:any)'] = 'home/detail_services/$1';
 
 
+// Menu Services
+$route['services/new-installation'] = 'services/view_new_installation';
+$route['services/re-roofing'] = 'services/view_re_roofing';
+$route['services/retrofitting'] = 'services/view_retrofitting';
+$route['services/roof-inspection'] = 'services/view_roof_inspection';
+$route['services/roof-repair'] = 'services/view_roof_repair';
+$route['services/roof-maintenance'] = 'services/view_roof_maintenance';
+
+
 /********* Dashboard *************/
 $route['login'] = 'dashboard/login';
 $route['dashboard'] = 'dashboard';
