@@ -4,12 +4,12 @@
     <div class="container">
       <div class="col-12 col-md-12">
         <div class="d-flex bd-highlight mb-2">
-          <div class="title-page">Seminars</div>
+          <div class="title-page">Roofing Seminars</div>
         </div>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb ">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Seminars</li>
+            <li class="breadcrumb-item"><a href="index.html">Services</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Roofing Seminars</li>
           </ol>
         </nav>
       </div>
@@ -18,24 +18,14 @@
   </div>
 </div>
 
-  <!-- CONTENT -->
-<div class="section">
-  <div class="content-wrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-12">
 
-          <nav class="navfilter">
-            <ul class="portfolio_filter">
-              <li><a href="#" class="active" data-filter="*">All</a></li>
-              <li><a href="#" data-filter=".eco">Eco</a></li>
-              <li><a href="#" data-filter=".manufacturing">Manufacturing</a></li>
-              <li><a href="#" data-filter=".industry">Industry</a></li>
-              <li><a href="#" data-filter=".oil">Oil</a></li>
-              <li><a href="#" data-filter=".gas">Gas</a></li>
-              <li><a href="#" data-filter=".factory">Factory</a></li>
-            </ul>
-          </nav>
+  <!-- CONTENT -->
+	<div id="class" class="">
+		<div class="content-wrap">
+			<div class="container">
+
+				<div class="row">
+					<div class="col-12 col-sm-12 col-md-4 order-last">
 
         </div>
       </div>
@@ -61,11 +51,3 @@
           </div>
 
         <?php endforeach; ?>
-
-
-
-
-      </div>
-    </div>
-  </div>
-</div>

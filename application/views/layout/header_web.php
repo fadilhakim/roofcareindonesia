@@ -117,11 +117,11 @@
 									<a class="dropdown-item" href="<?= base_url() ?>services/roof-inspection">Roof Inspection</a>
 									<a class="dropdown-item" href="<?= base_url() ?>services/roof-repair">Roof Repair</a>
 									<a class="dropdown-item" href="<?= base_url() ?>services/roof-maintenance">Roof Maintenance</a>
-									<a class="dropdown-item" href="/">Roofing Seminars*</a>
-									<a class="dropdown-item" href="/">Roof Restoration</a>
-									<a class="dropdown-item" href="/">Roof Cleaning</a>
-									<a class="dropdown-item" href="/">Engineering</a>
-									<a class="dropdown-item" href="/">Estimating</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/roofing-seminars">Roofing Seminars*</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/roof-restoration">Roof Restoration</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/roof-cleaning">Roof Cleaning</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/engineering">Engineering</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/view_estimating">Estimating</a>
 								</div>
 			                </li>
 

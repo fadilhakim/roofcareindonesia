@@ -63,4 +63,63 @@ class Services extends CI_Controller {
     
         $this->load->view('layout/page_web',$content);
     }
+
+
+    public function roofing_seminars(){
+
+        $content['header_web']  = $this->load->view('layout/header_web');
+        $content['content_web'] = $this->load->view('seminars/index');
+        $content['footer_web']  = $this->load->view('layout/footer_web');
+    
+        $this->load->view('layout/page_web',$content);
+      }
+    
+      public function detail_roofing_seminars(){
+    
+        $content['header_web']  = $this->load->view('layout/header_web');
+        $content['content_web'] = $this->load->view('seminars/detail');
+        $content['footer_web']  = $this->load->view('layout/footer_web');
+    
+        $this->load->view('layout/page_web',$content);
+      }
+
+
+      public function view_roof_restoration(){
+
+        $content['header_web']  = $this->load->view('layout/header_web');
+        $content['content_web'] = $this->load->view('roof_restoration/index');
+        $content['footer_web']  = $this->load->view('layout/footer_web');
+    
+        $this->load->view('layout/page_web',$content);
+      }
+
+
+      public function view_roof_cleaning(){
+
+        $content['header_web']  = $this->load->view('layout/header_web');
+        $content['content_web'] = $this->load->view('roof_cleaning/index');
+        $content['footer_web']  = $this->load->view('layout/footer_web');
+    
+        $this->load->view('layout/page_web',$content);
+      }
+
+      public function view_engineering(){
+
+        $content['header_web']  = $this->load->view('layout/header_web');
+        $content['content_web'] = $this->load->view('engineering/index');
+        $content['footer_web']  = $this->load->view('layout/footer_web');
+    
+        $this->load->view('layout/page_web',$content);
+      }
+
+      public function view_estimating(){
+
+        $content['header_web']  = $this->load->view('layout/header_web');
+        $content['content_web'] = $this->load->view('estimating/index');
+        $content['footer_web']  = $this->load->view('layout/footer_web');
+    
+        $this->load->view('layout/page_web',$content);
+      }
+
+
 }

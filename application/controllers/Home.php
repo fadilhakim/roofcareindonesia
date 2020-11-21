@@ -74,6 +74,7 @@ class Home extends CI_Controller
     $this->load->view('layout/page_web',$content);
   }
 
+
   public function seminars(){
     $data['data_seminar'] = $this->seminar_model->get_all_data();
     $content['header_web']  = $this->load->view('layout/header_web');
