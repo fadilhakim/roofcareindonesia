@@ -74,7 +74,7 @@
 			<div class="container">
 			    <nav id="navbar-example" class="navbar navbar-expand-lg">
 			        <a class="navbar-brand" href="<?= base_url();?>">
-						    <img style="width:50%" src="<?= base_url();?>/public/images/logo_roofcareIndonesia.png" alt="" />
+						    <img style="width:50%" src="<?= base_url();?>/public/images/logo_roofcare.jpg" alt="" />
 		          </a>
 			        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			            <span class="navbar-toggler-icon"></span>
@@ -91,67 +91,63 @@
 			                    <a class="nav-link" href="<?= base_url();?>about">
 					                  ABOUT US
 						              </a>
-    			                <!-- <div class="dropdown-menu">
-    			                  <a class="dropdown-item" href="about-company.html">OUR COMPANY</a>
-    	          						<a class="dropdown-item" href="about-history.html">COMPANY HISTORY</a>
-    	          						<a class="dropdown-item" href="about-partners.html">OUR PARTNERS</a>
-    					            </div> -->
 			                </li>
-                      <?php $getCategorySystems = $this->sistems_model->get_all_systems_category() ?>
-                      <?php $getSubCategorySystems = $this->sistems_model->get_all_systems_sub_category() ?>
 
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SYSTEMS</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
                         <div class="dropdown-menu">
-                          <?php foreach ($getCategorySystems->result() as $keyS): ?>
-                              <a class="dropdown-item" href="#"><?= $keyS->judul ?></a>
-                          <?php endforeach; ?>
-
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Green Roofing Options</a>
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Systems</a>
                           <div class="dropdown-menu">
     			                  <a class="dropdown-item" href="about-company.html">Gradern Roofs</a>
-    	          						<a class="dropdown-item" href="about-history.html">Cool Roofs</a>
-    					            </div>
-                          <aclass="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gutter Solutions</a>
-                          <div class="dropdown-menu">
-    			                  <a class="dropdown-item" href="about-company.html">Conventional</a>
-    	          						<a class="dropdown-item" href="about-history.html">Siphonic Systems</a>
-    					            </div>
+    	          				  <a class="dropdown-item" href="about-history.html">Cool Roofs</a>
+    					  </div>
+                          <a class="dropdown-item" href="pages-404-page.html">Safety Lines</a>
                         </div>
                       </li>
-                      <?php $getCategoryServices = $this->services_model->get_all_services_category() ?>
-			                <li class="nav-item dropdown">
-			                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES</a>
-                          <div class="dropdown-menu">
 
-                             <?php foreach ($getCategoryServices->result() as $key): ?>
-                                 <a class="dropdown-item" href="<?= base_url(); ?>service_detail/<?= $key->id ?>"><?= $key->judul ?></a>
-                             <?php endforeach; ?>
-                          </div>
+			                <li class="nav-item dropdown">
+			                    <!-- <a class="nav-link" href="<?= base_url() ?>services" role="button"  aria-haspopup="true" aria-expanded="false">
+      						          SERVICES
+      						    </a> -->
+								  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES</a>
+								  <div class="dropdown-menu">
+									<a class="dropdown-item" href="<?= base_url() ?>services/new-installation">New Installation</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/re-roofing">Re-roofing</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/retrofitting">Retrofitting</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/roof-inspection">Roof Inspection</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/roof-repair">Roof Repair</a>
+									<a class="dropdown-item" href="<?= base_url() ?>services/roof-maintenance">Roof Maintenance</a>
+									<a class="dropdown-item" href="/">Roofing Seminars*</a>
+									<a class="dropdown-item" href="/">Roof Restoration</a>
+									<a class="dropdown-item" href="/">Roof Cleaning</a>
+									<a class="dropdown-item" href="/">Engineering</a>
+									<a class="dropdown-item" href="/">Estimating</a>
+								</div>
+			                </li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="/">Residentials</a>
+									<a class="dropdown-item" href="/">Commercials</a>
+									<a class="dropdown-item" href="/">Industrials</a>
+								</div>
 			                </li>
 
 
-
 			                <li class="nav-item dropdown">
-			                    <a class="nav-link" href="<?= base_url() ?>seminars">
-      						          SEMINARS
-      						        </a>
+								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NEWS</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="<?= base_url() ?>case_studies">Case Studies</a>
+									<a class="dropdown-item" href="/">Blog</a>
+								</div>
 			                </li>
-
-			                <li class="nav-item dropdown">
-			                    <a class="nav-link" href="<?= base_url() ?>case_studies">
-      						          CASE STUDIES
-      						        </a>
-			                </li>
-
 			                <li class="nav-item">
 			                    <a class="nav-link" href="<?= base_url() ?>contact">CONTACT</a>
 			                </li>
-
 			            </ul>
 			        </div>
 			    </nav> <!-- -->
 			</div>
 		</div>
-
     </div>
