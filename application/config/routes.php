@@ -60,9 +60,6 @@ $route['case_studies/detail/(:any)'] = 'home/detail_case_studies/$1';
 
 
 
-$route['seminars'] = 'home/seminars';
-$route['seminars/detail/(:any)'] = 'home/detail_seminars/$1';
-
 $route['services'] = 'home/services';
 $route['services/detail/(:any)'] = 'home/detail_services/$1';
 
@@ -74,6 +71,12 @@ $route['services/retrofitting'] = 'services/view_retrofitting';
 $route['services/roof-inspection'] = 'services/view_roof_inspection';
 $route['services/roof-repair'] = 'services/view_roof_repair';
 $route['services/roof-maintenance'] = 'services/view_roof_maintenance';
+$route['services/roofing-seminars'] = 'services/roofing_seminars';
+$route['services/roofing-seminars/detail/(:any)'] = 'services/detail_roofing_seminars/$1';
+$route['services/roof-restoration'] = 'services/view_roof_restoration';
+$route['services/roof-cleaning'] = 'services/view_roof_cleaning';
+$route['services/engineering'] = 'services/view_engineering';
+$route['services/estimating'] = 'services/view_estimating';
 
 
 /********* Dashboard *************/

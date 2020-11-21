@@ -72,23 +72,6 @@ class Home extends CI_Controller
     $this->load->view('layout/page_web',$content);
   }
 
-  public function seminars(){
-
-    $content['header_web']  = $this->load->view('layout/header_web');
-    $content['content_web'] = $this->load->view('seminars/index');
-    $content['footer_web']  = $this->load->view('layout/footer_web');
-
-    $this->load->view('layout/page_web',$content);
-  }
-
-  public function detail_seminars(){
-
-    $content['header_web']  = $this->load->view('layout/header_web');
-    $content['content_web'] = $this->load->view('seminars/detail');
-    $content['footer_web']  = $this->load->view('layout/footer_web');
-
-    $this->load->view('layout/page_web',$content);
-  }
 
   public function page404(){
 

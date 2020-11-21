@@ -1,25 +1,23 @@
-<!-- BANNER -->
-<div class="section banner-page" data-background="<?php base_url() ?>public/images/dummy/parallax-2.jpg">
-  <div class="content-wrap pos-relative">
-    <div class="container">
-      <div class="col-12 col-md-12">
-        <div class="d-flex bd-highlight mb-2">
-          <div class="title-page">Roofing Seminars</div>
-        </div>
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb ">
-            <li class="breadcrumb-item"><a href="index.html">Services</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Roofing Seminars</li>
-          </ol>
-        </nav>
-      </div>
+<div class="section banner-page" data-background="images/dummy-img-1920x300.jpg">
+		<div class="content-wrap pos-relative">
+			<div class="container">
+				<div class="col-12 col-md-12">
+					<div class="d-flex bd-highlight mb-2">
+						<div class="title-page">Roof Cleaning</div>
+					</div>
+					<nav aria-label="breadcrumb">
+					  <ol class="breadcrumb ">
+					    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item">Services</li>
+                        <li class="breadcrumb-item active" aria-current="page">Roof Cleaning</li>
+					  </ol>
+					</nav>
+				</div>
+			</div>
+		</div>
     </div>
 
-  </div>
-</div>
-
-
-  <!-- CONTENT -->
+    <!-- CONTENT -->
 	<div id="class" class="">
 		<div class="content-wrap">
 			<div class="container">
@@ -77,7 +75,7 @@
 					<div class="col-12 col-sm-12 col-md-8">
 						<img src="<?= base_url() ?>public/images/dummy/dummy-img-900x600.jpg" alt="" class="img-fluid">
 						<h3 class="text-primary my-4">
-							Roofing Seminars
+							Roof Cleaning
 						</h3>
 						<p class="text-black lead">We are pets clinic dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<p>Quisque ut dolor gravida, placerat libero vel, euismod. Ut enim ad minim veniam, quis nostrud exercitation. Quam temere in vitiis, legem sancimus haerentia. Pellentesque habitant morbi tristique senectus et netus. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.</p>
@@ -145,5 +143,4 @@
 			</div>
 		</div>
 	</div>  
-
-
+    
