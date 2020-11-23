@@ -3,21 +3,21 @@
 			<div class="container">
 				<div class="col-12 col-md-12">
 					<div class="d-flex bd-highlight mb-2">
-						<div class="title-page">New Installation</div>
+						<div class="title-page">Residentials</div>
 					</div>
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb ">
-					    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Services</li>
-                        <li class="breadcrumb-item active" aria-current="page">New Installation</li>
+					    <li class="breadcrumb-item"><a href="index.html">Projects</a></li>
+					    <li class="breadcrumb-item active" aria-current="page">Residentials</li>
 					  </ol>
 					</nav>
 				</div>
 			</div>
 			
 		</div>
-    </div>
-    
+	</div>
+
+
     <div class="section">
 		<div class="content-wrap">
 			<div class="container">
@@ -31,7 +31,7 @@
 							<div class="body">
 								<div class="info-box">
 									<div class="text">
-										<div class="title">New Installation-1</div>
+										<div class="title">Residentials-1</div>
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. </p>
 										<a href="services-detail.html" title="Get Detail">Get Detail</a>
 									</div>
@@ -48,7 +48,7 @@
 							<div class="body">
 								<div class="info-box">
 									<div class="text">
-										<div class="title">New Installation-2</div>
+										<div class="title">Residentials-2</div>
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. </p>
 										<a href="services-detail.html" title="Get Detail">Get Detail</a>
 									</div>
@@ -65,7 +65,7 @@
 							<div class="body">
 								<div class="info-box">
 									<div class="text">
-										<div class="title">New Installation-3</div>
+										<div class="title">Residentials-3</div>
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. </p>
 										<a href="services-detail.html" title="Get Detail">Get Detail</a>
 									</div>
@@ -82,7 +82,7 @@
 							<div class="body">
 								<div class="info-box">
 									<div class="text">
-										<div class="title">New Installation-4</div>
+										<div class="title">Residentials-4</div>
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. </p>
 										<a href="services-detail.html" title="Get Detail">Get Detail</a>
 									</div>
@@ -99,7 +99,7 @@
 							<div class="body">
 								<div class="info-box">
 									<div class="text">
-										<div class="title">New Installation-5</div>
+										<div class="title">Residentials-5</div>
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. </p>
 										<a href="services-detail.html" title="Get Detail">Get Detail</a>
 									</div>
@@ -116,7 +116,7 @@
 							<div class="body">
 								<div class="info-box">
 									<div class="text">
-										<div class="title">New Installation-6</div>
+										<div class="title">Residentials-6</div>
 										<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry orem Ipsum has been. </p>
 										<a href="services-detail.html" title="Get Detail">Get Detail</a>
 									</div>

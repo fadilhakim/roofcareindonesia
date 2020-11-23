@@ -79,6 +79,12 @@ $route['services/engineering'] = 'services/view_engineering';
 $route['services/estimating'] = 'services/view_estimating';
 
 
+// Menu Projects
+$route['projects/residentials'] = 'projects/view_residentials';
+$route['projects/commercials'] = 'projects/view_commercials';
+$route['projects/industrials'] = 'projects/view_industrials';
+
+
 /********* Dashboard *************/
 $route['login'] = 'dashboard/login';
 $route['dashboard'] = 'dashboard';

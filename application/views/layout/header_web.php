@@ -128,9 +128,9 @@
 							<li class="nav-item dropdown">
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
 								<div class="dropdown-menu">
-									<a class="dropdown-item" href="/">Residentials</a>
-									<a class="dropdown-item" href="/">Commercials</a>
-									<a class="dropdown-item" href="/">Industrials</a>
+									<a class="dropdown-item" href="<?= base_url() ?>projects/residentials">Residentials</a>
+									<a class="dropdown-item" href="<?= base_url() ?>projects/commercials">Commercials</a>
+									<a class="dropdown-item" href="<?= base_url() ?>projects/industrials">Industrials</a>
 								</div>
 			                </li>
 
