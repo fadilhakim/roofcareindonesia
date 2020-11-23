@@ -39,8 +39,8 @@
                   </div>
                   <div class="info-text">
                     <h4>Contact Email</h4>
-                    info@roofcareindonesia.com <br>
-                    marketing@roofcareindonesia.com
+                    <span style="font-size:14px;">info@roofcareindonesia.com <br>
+                    marketing@roofcareindonesia.com</span>
                   </div>
                 </div>
               </div>

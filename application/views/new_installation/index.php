@@ -8,16 +8,16 @@
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb ">
 					    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item">Services</li>
-                        <li class="breadcrumb-item active" aria-current="page">New Installation</li>
+              <li class="breadcrumb-item">Services</li>
+              <li class="breadcrumb-item active" aria-current="page">New Installation</li>
 					  </ol>
 					</nav>
 				</div>
 			</div>
-			
+
 		</div>
     </div>
-    
+
     <div class="section">
 		<div class="content-wrap">
 			<div class="container">
@@ -127,4 +127,4 @@
 				</div>
 			</div>
 		</div>
-	</div> 
+	</div>

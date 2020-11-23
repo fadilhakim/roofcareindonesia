@@ -1,15 +1,15 @@
-<div class="section banner-page" data-background="<?= base_url() ?>public/images/img_sample/metal_system.jpg">
+<div class="section banner-page" data-background="<?= base_url() ?>public/images/img_sample/green_banner.jpg">
 		<div class="content-wrap pos-relative">
 			<div class="container">
 				<div class="col-12 col-md-12">
 					<div class="d-flex bd-highlight mb-2">
-						<div class="title-page">Metal Roofing System</div>
+						<div class="title-page">Green Roofing</div>
 					</div>
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb ">
 					    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
-            	<li class="breadcrumb-item">Product</li>
-              <li class="breadcrumb-item active" aria-current="page">Metal Roofing System</li>
+              <li class="breadcrumb-item">Products</li>
+              <li class="breadcrumb-item active" aria-current="page">Green Roofing System</li>
 					  </ol>
 					</nav>
 				</div>
@@ -74,11 +74,11 @@
 
 					</div>
 					<div class="col-12 col-sm-12 col-md-8">
-						<img src="<?= base_url() ?>public/images/img_sample/mts.jpg" alt="" class="img-fluid">
+						<img src="<?= base_url() ?>public/images/img_sample/grn_pt.jpg" alt="" class="img-fluid">
 						<h3 class="text-primary my-4">
-							Metal Roofing System
+							Green Roofing Systems
 						</h3>
-						<p class="text-black lead">We are pets clinic dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p class="text-black lead">We are dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<p>Quisque ut dolor gravida, placerat libero vel, euismod. Ut enim ad minim veniam, quis nostrud exercitation. Quam temere in vitiis, legem sancimus haerentia. Pellentesque habitant morbi tristique senectus et netus. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.</p>
 						<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit.</p>
 

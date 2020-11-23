@@ -112,3 +112,15 @@ $route['systems'] = 'systems';
 $route['systems/create'] = 'systems/create';
 $route['systems/update'] = 'systems/update/$1';
 $route['systems/delete'] = 'systems/delete/$1';
+
+
+//user web route
+
+// Products
+$route['product/safety_lines'] = 'product/safety_lines';
+$route['product/metal_roofting_system'] = 'product/metal_roofting_system';
+$route['product/steep_slope_roofting'] = 'product/steep_slope_roofting';
+$route['product/singleply_roofting'] = 'product/singleply_roofting';
+$route['product/green_roofting_option'] = 'product/green_roofting_option';
+$route['product/liquid_applied_membrane'] = 'product/liquid_applied_membrane';
+$route['product/siphonic_gutter'] = 'product/siphonic_gutter';

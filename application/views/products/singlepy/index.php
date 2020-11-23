@@ -1,15 +1,15 @@
-<div class="section banner-page" data-background="<?= base_url() ?>public/images/img_sample/metal_system.jpg">
+<div class="section banner-page" data-background="images/dummy-img-1920x300.jpg">
 		<div class="content-wrap pos-relative">
 			<div class="container">
 				<div class="col-12 col-md-12">
 					<div class="d-flex bd-highlight mb-2">
-						<div class="title-page">Metal Roofing System</div>
+						<div class="title-page">Single-ply Roofing</div>
 					</div>
 					<nav aria-label="breadcrumb">
 					  <ol class="breadcrumb ">
-					    <li class="breadcrumb-item"><a href="<?= base_url() ?>">Home</a></li>
-            	<li class="breadcrumb-item">Product</li>
-              <li class="breadcrumb-item active" aria-current="page">Metal Roofing System</li>
+					    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item">Services</li>
+                        <li class="breadcrumb-item active" aria-current="page">Re-Roofing</li>
 					  </ol>
 					</nav>
 				</div>
@@ -26,7 +26,7 @@
 				<div class="row">
 					<div class="col-12 col-sm-12 col-md-4 order-last">
 
-						<!-- <div class="widget categories">
+						<div class="widget categories">
 							<ul class="category-nav">
 								<li class="active"><a href="#">Re-Roofing-1</a></li>
 								<li><a href="#">Re-Roofing-2</a></li>
@@ -35,7 +35,7 @@
 								<li><a href="#">Re-Roofing-5</a></li>
 								<li><a href="#">Re-Roofing-6</a></li>
 							</ul>
-						</div> -->
+						</div>
 
 						<div class="widget download">
 							<a href="#" class="btn btn-secondary btn-block btn-sidebar"><span class="fa  fa-file-pdf-o"></span> Company Brochure</a>
@@ -74,9 +74,9 @@
 
 					</div>
 					<div class="col-12 col-sm-12 col-md-8">
-						<img src="<?= base_url() ?>public/images/img_sample/mts.jpg" alt="" class="img-fluid">
+						<img src="<?= base_url() ?>public/images/dummy/dummy-img-900x600.jpg" alt="" class="img-fluid">
 						<h3 class="text-primary my-4">
-							Metal Roofing System
+							Re-Roofing
 						</h3>
 						<p class="text-black lead">We are pets clinic dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						<p>Quisque ut dolor gravida, placerat libero vel, euismod. Ut enim ad minim veniam, quis nostrud exercitation. Quam temere in vitiis, legem sancimus haerentia. Pellentesque habitant morbi tristique senectus et netus. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore.</p>
