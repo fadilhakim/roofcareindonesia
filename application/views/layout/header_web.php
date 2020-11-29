@@ -139,7 +139,7 @@
 								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NEWS</a>
 								<div class="dropdown-menu">
 									<a class="dropdown-item" href="<?= base_url() ?>case_studies">Case Studies</a>
-									<a class="dropdown-item" href="/">Blog</a>
+									<a class="dropdown-item" href="<?= base_url() ?>news/blog">Blog</a>
 								</div>
 			                </li>
 			                <li class="nav-item">

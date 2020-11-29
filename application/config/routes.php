@@ -84,6 +84,9 @@ $route['projects/residentials'] = 'projects/view_residentials';
 $route['projects/commercials'] = 'projects/view_commercials';
 $route['projects/industrials'] = 'projects/view_industrials';
 
+// Menu Blog
+$route['news/blog'] = 'blog/index';
+
 
 /********* Dashboard *************/
 $route['login'] = 'dashboard/login';
@@ -107,6 +110,13 @@ $route['dashboard/services/submit'] = 'dashboard/services_submit';
 $route['dashboard/services/delete/(:any)'] = 'dashboard/services_delete/$1';
 $route['dashboard/services/edit/(:any)'] = 'dashboard/services_edit/$1';
 $route['dashboard/services/update/(:any)'] = 'dashboard/services_update/$1';
+
+$route['dashboard/blog'] = 'dashboard/blog';
+$route['dashboard/blog/create'] = 'dashboard/blog_create';
+$route['dashboard/blog/edit/(:any)'] = 'dashboard/blog_edit/$1';
+$route['dashboard/blog/delete/(:any)'] = 'dashboard/blog_delete/$1';
+$route['dashboard/blog/submit'] = 'dashboard/blog_submit';
+$route['dashboard/blog/update/(:any)'] = 'dashboard/blog_update/$1';
 
 
 

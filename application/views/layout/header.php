@@ -176,6 +176,12 @@
                       <span>Case Studies</span>
                     </a>
                   </li>
+                  <li>
+                    <a href="<?= base_url() ?>dashboard/blog">
+                      <i class="material-icons">find_in_page</i>
+                      <span>Blog</span>
+                    </a>
+                  </li>
                 </ul>
             </div>
             <!-- #Menu -->

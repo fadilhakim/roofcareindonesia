@@ -1,15 +1,15 @@
 <!-- BANNER -->
-<div class="section banner-page" data-background="images/dummy-img-1920x300.jpg">
+<div class="section banner-page" data-background="<?= base_url() ?>public/images/dummy/dummy-img-1920x300.jpg">
   <div class="content-wrap pos-relative">
     <div class="container">
       <div class="col-12 col-md-12">
         <div class="d-flex bd-highlight mb-2">
-          <div class="title-page">Case Studies</div>
+          <div class="title-page">Blog</div>
         </div>
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb ">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Case Studies</li>
+            <li class="breadcrumb-item active" aria-current="page">Blog</li>
           </ol>
         </nav>
       </div>
@@ -18,7 +18,6 @@
   </div>
 </div>
 
-  <!-- CONTENT -->
 <div id="class" class="">
   <div class="content-wrap">
     <div class="container">
