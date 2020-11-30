@@ -33,7 +33,7 @@
         <div class="col-sm-12 col-md-12 col-lg-4">
           <div class="rs-news-1 mb-5">
             <div class="media">
-              <a href="case_studies/detail/<?= $item->id ?>">
+              <a href="blog/detail/<?= $item->id ?>">
                 <img src="<?= base_url() ?>public/images/uploads/<?= $item->image ?>" alt="" class="img-fluid">
               </a>
             </div>

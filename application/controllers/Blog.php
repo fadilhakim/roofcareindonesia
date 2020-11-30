@@ -26,4 +26,21 @@ class Blog extends CI_Controller{
         $this->load->view('layout/page_web',$content);
       }
 
+      public function detail_blog($id){
+
+        $getDataById = $this->blog_model->get_all_data_by_id($id);
+                    
+                    $data['id'] = $id;
+                    $data['title'] = $getDataById['title'];
+                    $data['description'] = $getDataById['description'];
+                    $data['image'] = $getDataById['image'];
+    
+    
+        $content['header_web']  = $this->load->view('layout/header_web');
+        $content['content_web'] = $this->load->view('news/blog/detail', $data);
+        $content['footer_web']  = $this->load->view('layout/footer_web');
+    
+        $this->load->view('layout/page_web',$content);
+      }
+
 }

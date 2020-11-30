@@ -86,6 +86,7 @@ $route['projects/industrials'] = 'projects/view_industrials';
 
 // Menu Blog
 $route['news/blog'] = 'blog/index';
+$route['news/blog/detail/(:any)'] = 'blog/detail_blog/$1';
 
 
 /********* Dashboard *************/
@@ -117,6 +118,7 @@ $route['dashboard/blog/edit/(:any)'] = 'dashboard/blog_edit/$1';
 $route['dashboard/blog/delete/(:any)'] = 'dashboard/blog_delete/$1';
 $route['dashboard/blog/submit'] = 'dashboard/blog_submit';
 $route['dashboard/blog/update/(:any)'] = 'dashboard/blog_update/$1';
+
 
 
 
