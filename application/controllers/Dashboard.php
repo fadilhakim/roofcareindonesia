@@ -7,18 +7,24 @@ class Dashboard extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-		if(!$user = $this->session->userdata('username'))
-		{
-			redirect('dashboard/login');
-		}else{
-			$this->load->model('insert_model');
-	 	  $this->load->model('case_studies_model');
+			if(!$user = $this->session->userdata('username'))
+			{
+				redirect('login');
+			}else{
 
-	 	  $this->load->model('seminar_model');
-	 	  $this->load->model('services_model');
 
-	 	  $this->load->helper(array('form', 'url'));
-		}
+
+				$this->load->model("services_model");
+				$this->load->model("dashboard_model");
+
+				$this->load->helper("money_format_helper");
+
+				$this->load->model('insert_model');
+	 		 	$this->load->model('case_studies_model');
+	 		 	$this->load->model('services_model');
+	 		 	$this->load->model('blog_model');
+	 			$this->load->helper(array('form', 'url'));
+			}
 
 	}
 
@@ -357,5 +363,117 @@ class Dashboard extends CI_Controller {
 				}
 
 
+<<<<<<< HEAD
+=======
+				// blog
+
+				public function blog(){
+
+					$data['item_data'] = $this->blog_model->get_all_data();
+
+					$content['header_web']  = $this->load->view('layout/header');
+					$content['content_web'] = $this->load->view('dashboard/blog/index', $data);
+					$content['footer_web']  = $this->load->view('layout/footer');
+
+					$this->load->view('layout/page',$content);
+				}
+
+				public function blog_create (){
+					$content['header_web']  = $this->load->view('layout/header');
+					$content['content_web'] = $this->load->view('dashboard/blog/create');
+					$content['footer_web']  = $this->load->view('layout/footer');
+					$this->load->view('layout/page',$content);
+				}
+
+				private function _uploadImageBlog(){
+					$config['upload_path']          = './public/images/uploads/';
+					$config['allowed_types']        = 'gif|jpg|png|jpeg';
+					$config['overwrite']			      = true;
+					//$config['max_size']             = 1024; // 1MB
+					// $config['max_width']            = 1024;
+					// $config['max_height']           = 768;
+
+					$this->load->library('upload', $config);
+					$this->upload->do_upload('gambar_blog');
+
+						if (!$this->upload->do_upload('gambar_blog')){
+							echo "error upload";
+							exit();
+						}
+					}
+
+				public function blog_submit(){
+					$judul_blog = $this->input->post('judul_blog');
+					// $kategori_seminar = $this->input->post('kategori_seminar');
+					$deskripsi_blog = $this->input->post('deskripsi_blog');
+					$this->image = $this->_uploadImageBlog();
+					$image = $_FILES['gambar_blog']['name'];
+					$data_post = array(
+							'title' => $judul_blog,
+							'image' => $image,
+							'description' => $deskripsi_blog
+						);
+					$this->blog_model->insert_blog($data_post,'t_blog');
+
+					redirect('dashboard/blog');
+				}
+
+				public function blog_delete($id){
+					$deleted = $this->blog_model->delete_data($id);
+
+					if($deleted){
+						redirect('dashboard/blog');
+					}
+				}
+
+				public function blog_edit($id){
+
+					$getDataById = $this->blog_model->get_all_data_by_id($id);
+
+					$data['id'] = $id;
+					$data['title'] = $getDataById['title'];
+					$data['description'] = $getDataById['description'];
+					$data['image'] = $getDataById['image'];
+
+
+					$content['header_web']  = $this->load->view('layout/header');
+					$content['content_web'] = $this->load->view('dashboard/blog/edit', $data);
+					$content['footer_web']  = $this->load->view('layout/footer');
+
+					$this->load->view('layout/page',$content);
+				}
+
+
+				public function blog_update($id){
+					$judul_blog = $this->input->post('judul_blog');
+					$deskripsi_blog = $this->input->post('deskripsi_blog');
+
+					if(!empty($_FILES['gambar_blog']['name'])){
+						$this->image = $this->_uploadImageBlog();
+						$image = $_FILES['gambar_blog']['name'];
+					}else {
+						// $this->image = $this->input->post('old_image');
+						$image = $this->input->post('old_image');
+					}
+
+
+
+					$data_post = array(
+						'title' => $judul_blog,
+						'image' => $image,
+						'description' => $deskripsi_blog
+					);
+
+					$updated = $this->blog_model->update_data($data_post, $id);
+
+					if($updated){
+						redirect('dashboard/blog');
+					}
+				}
+
+
+
+
+>>>>>>> menu-services
 
 }

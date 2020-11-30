@@ -121,36 +121,36 @@
 			                <li class="nav-item dropdown">
 
         							  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">SERVICES</a>
-        							  <div class="dropdown-menu">
-          								<a class="dropdown-item" href="<?= base_url() ?>services/new-installation">New Installation</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/re-roofing">Re-roofing</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/retrofitting">Retrofitting</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/roof-inspection">Roof Inspection</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/roof-repair">Roof Repair</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/roof-maintenance">Roof Maintenance</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/roofing-seminars">Roofing Seminars*</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/roof-restoration">Roof Restoration</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/roof-cleaning">Roof Cleaning</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/engineering">Engineering</a>
-          								<a class="dropdown-item" href="<?= base_url() ?>services/view_estimating">Estimating</a>
-        							</div>
-		                </li>
+          							  <div class="dropdown-menu">
+            								<a class="dropdown-item" href="<?= base_url() ?>services/new-installation">New Installation</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/re-roofing">Re-roofing</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/retrofitting">Retrofitting</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/roof-inspection">Roof Inspection</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/roof-repair">Roof Repair</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/roof-maintenance">Roof Maintenance</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/roofing-seminars">Roofing Seminars*</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/roof-restoration">Roof Restoration</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/roof-cleaning">Roof Cleaning</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/engineering">Engineering</a>
+            								<a class="dropdown-item" href="<?= base_url() ?>services/view_estimating">Estimating</a>
+          							</div>
+		                  </li>
 
 
-      							<li class="nav-item dropdown">
-      								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
-      								<div class="dropdown-menu">
-      									<a class="dropdown-item" href="<?= base_url() ?>projects/residentials">Residentials</a>
-      									<a class="dropdown-item" href="<?= base_url() ?>projects/commercials">Commercials</a>
-      									<a class="dropdown-item" href="<?= base_url() ?>projects/industrials">Industrials</a>
-      								</div>
-		                </li>
+        							<li class="nav-item dropdown">
+        								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PROJECTS</a>
+        								<div class="dropdown-menu">
+        									<a class="dropdown-item" href="<?= base_url() ?>projects/residentials">Residentials</a>
+        									<a class="dropdown-item" href="<?= base_url() ?>projects/commercials">Commercials</a>
+        									<a class="dropdown-item" href="<?= base_url() ?>projects/industrials">Industrials</a>
+        								</div>
+    	                </li>
 
 		                <li class="nav-item dropdown">
       								<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">NEWS</a>
       								<div class="dropdown-menu">
       									<a class="dropdown-item" href="<?= base_url() ?>case_studies">Case Studies</a>
-      									<a class="dropdown-item" href="/">Blog</a>
+      									<a class="dropdown-item" href="<?= base_url() ?>news/blog">Blog</a>
       								</div>
 		                </li>
 		                <li class="nav-item">
